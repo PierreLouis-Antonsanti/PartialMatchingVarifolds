@@ -569,7 +569,7 @@ class DatalossClass():
         CS, LS, NSn = Compute_structures(self.VS, self.FS_sel, self.structure)
         omega_S = K(CS, CS, NSn, NSn, LS)
         
-        L2 = self.PartialVarifoldLocalNormalizedOriented()
+        L2 = self.PartialVarifoldLocalNormalized()
         
         def loss(VS):
             CS1, LS1, NSn1 = Compute_structures(VS, self.FS_sel, self.structure)
